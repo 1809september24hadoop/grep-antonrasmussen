@@ -1,0 +1,12 @@
+﻿#1 grep '^Z' cities.txt | cat
+#2 grep '.gan$' cities.txt | cat 
+#3 grep -E '^A|^D|^E' cities.txt | cat -b
+--Note, in this command and in ones below, I've added the -b to cat in order to show the expected output of 53 lines
+#4 grep '\<.ar' cities.txt | cat -b
+--Note, I had a bit of confusion with the wording of this question originally but Peter was quick to reword the question for clarity.
+#5 grep -v '^C' cities.txt | cat -b
+#6 grep -Ei "\b[-'(abcdefghijklmnopqrstuvwxyz)]{14,}\b" cities.txt | cat
+#7 grep -c '^B' cities.txt | cat
+#8 grep d -o cities.txt | wc -l | cat
+#9 grep -E '(.)\1{1}$' cities.txt | cat
+#10 ... tricky... still working on this one.
