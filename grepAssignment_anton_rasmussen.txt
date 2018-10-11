@@ -5,8 +5,8 @@
 #4 grep '\<.ar' cities.txt | cat -b
 --Note, I had a bit of confusion with the wording of this question originally but Peter was quick to reword the question for clarity.
 #5 grep -v '^C' cities.txt | cat -b
-#6 grep -Ei "\b[-'(abcdefghijklmnopqrstuvwxyz)]{14,}\b" cities.txt | cat
+#6 grep -Ei "\b[-'abcdefghijklmnopqrstuvwxyz]{14,}\b" cities.txt | cat
 #7 grep -c '^B' cities.txt | cat
 #8 grep d -o cities.txt | wc -l | cat
 #9 grep -E '(.)\1{1}$' cities.txt | cat
-#10 ... tricky... still working on this one.
+#10 grep -Eiw '^([a-z])([a-z])([a-z])\2\1' cities.txt
