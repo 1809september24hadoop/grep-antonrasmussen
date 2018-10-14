@@ -1,10 +1,16 @@
 #1 grep '^Z' cities.txt | cat
 #2 grep 'gan$' cities.txt | cat
---I've opted to use $ instead of \> because we are looking for cities that end with the word gan and not for cities that might contain multiple words that end in gan... for example, if there were a city called Foogan Bar, using \> would incorrectly grab this city 
+--I've opted to use $ instead of \> because we are looking for 
+--cities that end with the word gan and not for cities that might
+--contain multiple words that end in gan... for example, 
+--if there were a city called Foogan Bar, using \> would 
+--incorrectly grab this city 
 #3 grep -E '^A|^D|^E' cities.txt | cat -b
---Note, in this command and in ones below, I've added the -b to cat in order to show the expected output of 53 lines
+--Note, in this command and in ones below, I've added the -b to cat
+--in order to show the expected output of 53 lines
 #4 grep '\<.ar' cities.txt | cat -b
---Note, I had a bit of confusion with the wording of this question originally but Peter was quick to reword the question for clarity.
+--Note, I had a bit of confusion with the wording of this question 
+--originally but Peter was quick to reword the question for clarity.
 #5 grep -v '^C' cities.txt | cat -b
 #6 grep -Ei "\b[-'abcdefghijklmnopqrstuvwxyz]{14,}\b" cities.txt | cat
 #7 grep -c '^B' cities.txt | cat
