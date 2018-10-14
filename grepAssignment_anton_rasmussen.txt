@@ -10,4 +10,4 @@
 #7 grep -c '^B' cities.txt | cat
 #8 grep d -o cities.txt | wc -l | cat
 #9 grep -E '(.)\1{1}$' cities.txt | cat
-#10 grep -Eiw '^([a-z])([a-z])([a-z])\2\1' cities.txt
+#10 grep -Eiw '^([a-z])([a-z])([a-z])\2\1' cities.txt | cat
